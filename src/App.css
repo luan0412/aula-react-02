@@ -6,6 +6,23 @@
   height: 40vmin;
   pointer-events: none;
 }
+#somar {
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: darkgreen;
+  border-radius: 15px;
+}
+#subtrair {
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: darkblue;
+  border-radius: 15px;
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

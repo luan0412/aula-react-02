@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import  Mensagem  from './componentes/Mensagem.js';
+import Carta from './componentes/Carta.js';
 
-function App() {
-  return (
+
+export default function App(){
+  let [num,setNum] =useState(0)
+  let n1 = 10
+
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+ <>
+      <Mensagem/>
+      <Carta remetente ="Luan" destino ="Pernambuco"/>
 
-export default App;
+      <p> Contador = {num}</p>
+      <button id ="somar" onClick = {()=>setNum(num+=5)}>Somar</button>
+      <button id="subtrair" onClick = {()=>setNum(num-=3)}>Subtrair</button>
+
+  </>
+  </div>
+ )
+}
